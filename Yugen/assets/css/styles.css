@@ -1,0 +1,735 @@
+/* Navbar Styling */
+.navbar-brand img {
+    max-width: 120px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    color: #333; 
+    text-decoration: none;
+}
+
+/* Hover Effect with Orange Underline */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; 
+}
+
+/* Responsive Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+
+
+/* Carousel Styling */
+#ngoCarousel {
+    width: auto; 
+    height: 780px; 
+    overflow: hidden;
+}
+
+/* Ensure images cover the carousel area */
+#ngoCarousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Overlay effect inside image */
+#ngoCarousel .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: left;
+    padding: 0px 300px 500px 300px; 
+}
+
+/* Text styling inside carousel */
+#ngoCarousel .carousel-caption h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#ngoCarousel .carousel-caption p {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+/* Buttons inside carousel */
+#ngoCarousel .carousel-caption .btn-container {
+    display: flex;
+    flex-wrap: nowrap;  
+    gap: 15px; 
+}
+
+#ngoCarousel .carousel-caption .btn-primary {
+    background-color: #1166a3;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 30px;
+    white-space: nowrap; 
+}
+
+#ngoCarousel .carousel-caption .btn-outline-light {
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-color: #fff;
+    color: #fff;
+    white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    #ngoCarousel .carousel-caption {
+        padding: 50px 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    #ngoCarousel .carousel-caption {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    #ngoCarousel .carousel-caption {
+        align-items: center; 
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #ngoCarousel .carousel-caption .btn-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* Grid Section */
+.grid-section {
+    padding: 100px 0;
+}
+
+/* Grid Box Styling */
+.grid-box {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.orange-bg {
+    background-color: #01796F; 
+    color: #fff;
+}
+
+.white-bg {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Icon Styling */
+.grid-box i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect */
+.grid-box:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+/* Who We Are Section */
+.who-we-are {
+    padding: 60px 0;
+    background-color: rgba(128, 128, 128, 0.089);
+}
+
+/* Image Styling */
+.who-we-are img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Content */
+.who-we-are h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.who-we-are p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.who-we-are .btn {
+    background-color: #ff6600;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.who-we-are .btn:hover {
+    background-color: #e65c00; 
+}
+
+
+
+
+/* Stats Section */
+.stats-section {
+    background:#01796F; 
+    background-blend-mode: overlay;
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* Grid Box */
+.stats-box {
+    border-radius: 10px;
+    color: white;
+}
+
+
+/* Icons */
+.stats-box .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00; 
+}
+
+.stats-box .icon:hover {
+    transform: translateY(-3px);
+}
+/* Text Styling */
+.stats-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stats-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+
+/* Join Us Section */
+.join-us-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+/* Left Text Styling */
+.join-us-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.join-us-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.join-us-section .btn {
+    background-color: #ff6600; 
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.join-us-section .btn:hover {
+    background-color: #e65c00; 
+}
+
+/* Image Styling */
+.join-us-section img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #01796F;
+    color: #fff;
+    padding: 40px 0;
+}
+
+/* Footer Logo */
+.footer-logo {
+    width: 75px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Footer Heading */
+.footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Footer Paragraph */
+.footer p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6600; 
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6600; 
+}
+
+/* Newsletter Form */
+.footer form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer form .btn {
+    width: 100%;
+    background-color: #ff6600;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.footer form .btn:hover {
+    background-color: #e65c00; 
+}
+
+
+
+
+/* About Us Section Styling */
+.about-us-section {
+    width: 100%;
+    height: 200px; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Full Cover Image */
+.about-us-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/images/slide3.jpg'); 
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text inside the About Us Section */
+.about-us-text {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    max-width: 80%;
+}
+
+.about-us-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* Section Styling */
+.we-serve-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Section Title & Description */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Service Box Styling */
+.service-box {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white; /* Fully White Background */
+    color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Drop Shadow */
+}
+
+/* Icon Styling */
+.service-box i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #006666; /* Peacock Color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-box {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/* Background Image Section */
+.bg-image-section {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background: url('/Yugen/assets/images/Dreams-on-Streets-870x432.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center; /* Align content to the right */
+    align-items: center;
+    padding-right: 50px; /* Adjust spacing from the right */
+}
+
+/* Content Box Styling */
+.content-box {
+    background: rgba(255, 255, 255, 0.541); /* Light background for readability */
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Header & Paragraph Styling */
+.content-box h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bg-image-section {
+        justify-content: center; /* Center align on smaller screens */
+        padding-right: 0;
+        height: 300px;
+    }
+
+    .content-box {
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+
+
+
+/* contact Section Styling */
+.contacts-section {
+    width: 100%;
+    height: 200px; /* Adjust the height of the section */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Full Cover Image */
+.contact-us-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('/Yugen/assets/images/slide3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text inside the contact Section */
+.contact-us-text {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    max-width: 80%;
+}
+
+.contact-us-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-us-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* Get in Touch Section */
+.get-in-touch {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+/* Contact Form */
+.contact-form h2, .contact-details h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.contact-form .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    font-size: 1.1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-list i {
+    font-size: 1.5rem;
+    color: grey;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .get-in-touch .row {
+        flex-direction: column;
+    }
+    .contact-form, .contact-details {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contact-list li {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+/* contact Section Styling */
+.gallery-section {
+    width: 100%;
+    height: 200px; /* Adjust the height of the section */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Full Cover Image */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('/Yugen/assets/images/slide1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text inside the contact Section */
+.gallery-text {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    max-width: 80%;
+}
+
+.gallery-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gallery-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Image */
+.modal-content {
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+.modal-body img {
+    width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 5px;
+}
