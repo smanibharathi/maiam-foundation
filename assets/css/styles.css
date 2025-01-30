@@ -44,7 +44,7 @@
 /* Carousel Styling */
 #ngoCarousel {
     width: auto; 
-    height: 780px; 
+    height: auto; 
     overflow: hidden;
 }
 
