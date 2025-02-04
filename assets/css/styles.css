@@ -9,11 +9,11 @@
     padding: 10px 15px;
     position: relative;
     transition: all 0.3s ease-in-out;
-    color: #333; 
+    color: #000000; 
     text-decoration: none;
 }
 
-/* Hover Effect with Orange Underline */
+
 .navbar-nav .nav-link::after {
     content: '';
     position: absolute;
@@ -21,7 +21,7 @@
     bottom: -5px;
     width: 0;
     height: 2px;
-    background-color: orange;
+    background-color: #01796F;
     transition: width 0.3s ease-in-out;
 }
 
@@ -33,7 +33,7 @@
     color: #007bff; 
 }
 
-/* Responsive Navbar Toggler */
+/* Responsive Navbar */
 .navbar-toggler {
     border: none;
     outline: none;
@@ -44,11 +44,11 @@
 /* Carousel Styling */
 #ngoCarousel {
     width: auto; 
-    height: auto; 
+    height: 500px; 
     overflow: hidden;
 }
 
-/* Ensure images cover the carousel area */
+/* images cover */
 #ngoCarousel .carousel-item img {
     width: 100%;
     height: 100%;
@@ -143,18 +143,21 @@
 
 /* Grid Section */
 .grid-section {
-    padding: 100px 0;
+    padding: 20px 0;
 }
 
 /* Grid Box Styling */
 .grid-box {
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px; /* Adds spacing for mobile view */
+    margin-top: 10px;
 }
 
+/* Background Colors */
 .orange-bg {
     background-color: #01796F; 
     color: #fff;
@@ -171,17 +174,35 @@
     margin-bottom: 15px;
 }
 
-/* Hover Effect */
-.grid-box:hover {
-    transform: translateY(-5px);
+/* Hover Effect (Disabled on Mobile) */
+@media (min-width: 768px) {
+    .grid-box:hover {
+        transform: translateY(-5px);
+    }
 }
 
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .grid-box {
+        padding: 20px;
+        
+        
+    }
+    
+    .grid-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .grid-box p {
+        font-size: 1rem;
+    }
+}
 
 
 
 /* Who We Are Section */
 .who-we-are {
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: rgba(128, 128, 128, 0.089);
 }
 
@@ -198,6 +219,7 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .who-we-are p {
@@ -297,6 +319,7 @@
     width: 100%;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
 }
 
 
